@@ -23,7 +23,7 @@ header {
   flex-direction: column;
   gap: 1rem;
   justify-content: space-around;
-  padding: 0.8rem 1rem 2rem 1rem;
+  padding: 0.8rem 1rem 1rem 1rem;
   align-items: center;
   width: 100%;
   top: 0;
@@ -36,8 +36,9 @@ header > picture > img {
   width: 4rem;
 }
 nav {
-  width: 100%;
+  gap: 1rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   font-size: 1rem;
   font-family: var(--alternativeFont);
@@ -84,7 +85,7 @@ main {
   width: 80%;
   margin: auto;
 }
-.presentation-history > form > button {
+.presentation-description > a > button {
   width: 12rem;
   height: 2rem;
   border: 1px solid var(--mainFontColor);
@@ -94,7 +95,7 @@ main {
   transition: 0.2s all ease-in;
   cursor: pointer;
 }
-.presentation-history > form > button:hover {
+.presentation-description > a > button:hover {
   transform: scale(1.05);
   background-color: var(--mainFontColor);
   font-family: var(--alternativeFont);
@@ -117,13 +118,13 @@ main {
   flex-direction: column;
 }
 .memebers-resume h2 {
+  width: 100%;
   font-family: var(--mainFont);
   font-size: 4rem;
   color: var(--mainFontColor);
   line-height: 3.5rem;
   margin: 1rem;
 }
-
 .mb {
   display: flex;
   background-color: white;
@@ -192,18 +193,19 @@ main {
   gap: 1.7rem;
   width: 90%;
 }
-.icons > article {
+.icons>li{
+  list-style: none;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
 }
-.icons > article > h3 {
+.icons > li > h3 {
   font-size: 1rem;
   color: grey;
 }
-.icons > article > p {
+.icons > li > p {
   font-family: var(--alternativeFont);
   font-size: 0.8rem;
   margin-top: 0.5rem;
@@ -236,21 +238,23 @@ main {
   margin: 2rem;
 }
 .mixImg {
-  width:90vw;
+  width: 90vw;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
+  list-style: none;
 }
-.mixImg>picture , .mixImg>article{
+.mixImg >li> picture,
+.mixImg > li {
   width: 100%;
 }
-.mixImg>article>picture>img{
+.mixImg > li > picture > img {
   width: 100%;
 }
-.mixImg h3{
+.mixImg h3 {
   color: grey;
   font-family: var(--mainFont);
 }
@@ -258,31 +262,31 @@ main {
   font-family: var(--alternativeFont);
   font-weight: var(--subFont);
 }
-.mixImg>article  {
-  transition: 0.2s all ease-in; 
+.mixImg > li {
+  transition: 0.2s all ease-in;
   cursor: pointer;
 }
-.mixImg>article:hover  {
+.mixImg > li:hover {
   transform: scale(1.1);
 }
-/*Contacto*/
+/*Contact*/
 .contact {
   margin: 3rem 0;
   background-image: url(../Assets/concert-316464_1280.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 30vh;
+  padding: 1rem;
 }
 .contact h2 {
-  padding: 1rem;  
+  padding: 1rem;
   font-family: var(--mainFont);
   font-size: 4rem;
   color: white;
   line-height: 3.6rem;
   text-align: center;
 }
-.contact>article > form {  
+.contact > form {
   background-color: rgba(255, 255, 255, 0.671);
   display: flex;
   flex-direction: column;
@@ -294,14 +298,14 @@ main {
   padding: 0.5rem;
   gap: 1rem;
 }
-#inputEmail{
+#inputEmail {
   border-radius: 1rem;
   width: 70%;
   height: 2rem;
   padding: 0.3rem;
   border: 1px solid var(--mainFontColor);
 }
-#email-register-btn {  
+#email-register-btn {
   width: 10rem;
   height: 2rem;
   border: none;
@@ -324,46 +328,149 @@ footer {
   background-color: var(--mainFontColor);
   padding: 2rem 0;
 }
-footer>ul{
+footer > ul {
   width: 70%;
   display: flex;
   list-style: none;
   align-items: center;
-  margin: auto; 
+  margin: auto;
   justify-content: space-between;
 }
-footer >ul img {
+footer > ul img {
   width: 2.5rem;
   transition: all 0.2s ease-in;
 }
-footer >ul img:hover {
+footer > ul img:hover {
   transform: scale(1.2);
 }
-.addInfo{
+.addInfo {
   text-align: center;
 }
-.addInfo>picture{
+.addInfo > picture {
   margin: 1rem;
   display: flex;
   justify-content: center;
 }
-.addInfo>picture>img{
+.addInfo > picture > img {
   width: 30%;
 }
-.addInfo p, a {
-  font-family:var(--alternativeFont);
+.addInfo p,
+a {
+  font-family: var(--alternativeFont);
   color: white;
 }
-
-@media screen and (min-width:578px) {
+@media screen and (min-width: 578px) {
+  main {
+    margin-top: 5rem;
+  }
   header {
     flex-direction: row;
+    padding: 1rem;
   }
-
   /* video */
   .video > iframe {
     width: 100%;
     height: 70vw;
   }
-  
+  .memebers-resume {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  footer {
+    padding: 1rem;
+  }
+  footer > ul {
+    width: 50%;
+  }
+  footer > ul img {
+    width: 1.5rem;
+  }
+  .addInfo > picture > img {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 768px) {
+  main {
+    margin: 5rem 10vw;
+  }
+  .presentation-history {
+    flex-direction: column;
+    text-align: center;
+    margin: 6rem 0;
+  }
+  .presentation-description {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+  }
+  .presentation-description > h2 {
+    grid-area: 1 / 1 / 4 / 2;
+    width: 90%;
+    font-size: 8vw;
+    line-height: 9vw;
+    margin: 1rem;
+  }
+  .presentation-description > p {
+    width: 95%;
+    font-size: 1.5vw;
+    margin: 5vw 0 0 0;
+    grid-area: 1 / 2 / 3 / 3;
+  }
+  .presentation-description > a > button {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+  .video > iframe {
+    width: 100%;
+    height: 45vw;
+  }
+  .memebers-resume h2 {
+    font-size: 8vw;
+    margin: 6rem;
+  }
+  .discography h2 {
+    font-size: 8vw;
+    margin: 6rem;
+  }
+  .mixImg {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 85%;
+  }
+  .mixImg > li:nth-child(1) {
+    grid-area: 1 / 1 / 3 / 3;
+  }
+  .mixImg > li:nth-child(2) {
+    grid-area: 1 / 3 / 3 / 5;
+  }  
+  .contact {
+    margin: 6rem 0;    
+    padding: 5vw;
+  }
+  .contact h2 {
+    padding: 1rem;
+    font-family: var(--mainFont);
+    font-size: 6rem;
+    color: white;
+    line-height: 5.6rem;
+    text-align: center;
+  }
+  .contact > article > form {    
+    width: 60%;
+  }
+  footer {
+    padding: 1rem;
+    background-color: var(--mainFontColor);    
+    display: flex;
+    justify-content: space-around;    
+  }
+  footer > ul {
+    width: 30%;    
+    gap: 1rem;
+  }
+  footer > ul img {
+    width: 3rem;
+  }
 }
