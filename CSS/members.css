@@ -1,0 +1,41 @@
+.members-resume > article > picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.members-resume > article > picture > img {
+  width: 70%;
+  margin-bottom: 2rem;
+}
+.members-resume > article > details > summary {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  height: 2rem;
+  border: 1px solid var(--mainFontColor);
+  font-family: var(--alternativeFont);
+  font-weight: var(--btnWFont);
+  color: var(--mainFontColor);
+  transition: 0.2s all ease-in;
+  cursor: pointer;
+}
+.members-resume > article > details > summary:hover {
+  transform: scale(1.05);
+  background-color: var(--mainFontColor);
+  font-family: var(--alternativeFont);
+  font-weight: var(--btnWFont);
+  color: #f2f2f2;
+}
+.members-resume article picture {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.members-resume article img {
+  width: 50%;
+  margin: 1rem 0;
+}

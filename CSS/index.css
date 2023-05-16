@@ -55,7 +55,7 @@ header > nav > a:hover {
   transform: scale(1.1);
 }
 main {
-  margin-top: 9rem;
+  margin-top: 10rem;
 }
 /*Presentation section*/
 .presentation-history {
@@ -391,7 +391,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   main {
-    margin: 5rem 10vw;
+    margin: 6rem 10vw;
   }
   .presentation-history {
     flex-direction: column;
