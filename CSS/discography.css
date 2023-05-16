@@ -1,0 +1,70 @@
+main {
+  margin: 12rem 0 3rem 0;
+}
+.mix-discography > p,
+.recent-albums-section > p,
+.best-records > p {
+  margin-bottom: 2rem;
+}
+.mix-discography > article {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+}
+.mix-discography > article > picture > img {
+  width: 100%;
+}
+.recent-albums {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.recent-albums > li {
+  text-align: left;
+  width: 35%;
+}
+.recent-albums > li > picture > img {
+  width: 100%;
+}
+.recent-albums > li > p {
+  text-align: left;
+  margin: 0;
+}
+.best-records {
+  text-align: center;
+}
+.best-records > iframe {
+  margin: 0 auto;
+}
+@media screen and (min-width: 422px) {
+  main {
+    margin: 10rem 0 3rem 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  main {
+    margin: 8rem 0 3rem 0;
+  }
+  .mix-discography > p,
+  .recent-albums-section > p,
+  .best-records > p {
+    margin-bottom: 2rem;
+    width: 40%;
+  }
+  .mix-discography > article {    
+    width: 80%;
+    margin: auto;
+  }
+  .recent-albums > li {    
+    width: 18%;
+  }
+  .best-records>iframe{
+    width: 40%;
+    height: 70vh;
+  }
+
+}
