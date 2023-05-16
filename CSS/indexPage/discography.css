@@ -1,0 +1,62 @@
+@import url(../General/generalStyles.css);
+/*Discography*/
+.discography h2 {
+  font-family: var(--mainFont);
+  font-size: 4rem;
+  color: var(--mainFontColor);
+  line-height: 3.5rem;
+  text-align: center;
+  margin: 2rem;
+}
+.mixImg {
+  width: 90vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  list-style: none;
+}
+.mixImg > li > a {
+  text-decoration: none;
+}
+.mixImg > li > a > picture > img {
+  width: 100%;
+}
+.mixImg h3 {
+  color: grey;
+  font-family: var(--mainFont);
+}
+.mixImg > li > a > p {
+  font-family: var(--alternativeFont);
+  font-weight: var(--subFont);
+  color: var(--alternativeFontCOlor);
+}
+.mixImg > li {
+  transition: 0.2s all ease-in;
+  cursor: pointer;
+}
+.mixImg > li:hover {
+  transform: scale(1.1);
+}
+.mixImg > li > a {
+  transition: 0.2s all ease-in;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .discography h2 {   
+    margin: 3rem;
+  }
+  .mixImg {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 85%;
+  }
+  .mixImg > li:nth-child(1) {
+    grid-area: 1 / 1 / 3 / 3;
+  }
+  .mixImg > li:nth-child(2) {
+    grid-area: 1 / 3 / 3 / 5;
+  }
+}

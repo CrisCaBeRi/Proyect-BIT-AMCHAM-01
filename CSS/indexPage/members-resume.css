@@ -1,0 +1,138 @@
+@import url(../General/generalStyles.css);
+
+/*Members section*/
+.memebers-resume {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.memebers-resume h2 {
+  width: 100%;
+  font-family: var(--mainFont);
+  font-size: 4rem;
+  color: var(--mainFontColor);
+  line-height: 3.5rem;
+  margin: 1rem;
+}
+.mb {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem auto;
+  width: 280px;
+  box-shadow: 2px 4px 5px 0px gray;
+  border-radius: 15px;
+}
+.bck-card {
+  width: 100%;
+  height: 7rem;
+  background-color: var(--mainFontColor);
+  border-radius: 1rem 1rem 0 0;
+  color: white;
+  font-family: var(--mainFont);
+  font-size: 6rem;
+}
+.img-mb img {
+  margin-top: -4rem;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid var(--mainFontColor);
+}
+.mb h3 {
+  font-family: var(--mainFont);
+  font-size: 2.5rem;
+  color: var(--mainFontColor);
+}
+.rol {
+  font-family: var(--alternativeFont);
+  font-style: italic;
+  color: grey;
+  margin-bottom: 0.5rem;
+}
+.artist-resume {
+  font-family: var(--alternativeFont);
+  font-weight: var(--pWeFont);
+  width: 90%;
+}
+.mb > button {
+  margin: 1rem 0;
+  width: 12rem;
+  height: 2rem;
+  border: 1px solid var(--mainFontColor);
+  font-family: var(--alternativeFont);
+  font-weight: var(--btnWFont);
+  color: var(--mainFontColor);
+  transition: 0.2s all ease-in;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.mb > button:hover {
+  transform: scale(1.05);
+  background-color: var(--mainFontColor);
+  font-family: var(--alternativeFont);
+  font-weight: var(--btnWFont);
+  color: #f2f2f2;
+}
+.icons {
+  margin: 0.5rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.7rem;
+  width: 90%;
+}
+.icons > li {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icons > li > h3 {
+  font-size: 1rem;
+  color: grey;
+}
+.icons > li > p {
+  font-family: var(--alternativeFont);
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: rgba(128, 128, 128, 0.884);
+}
+.pic-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #b81828;
+  transition: all 0.2s ease-in;
+}
+.pic-icons > img {
+  width: 70%;
+  height: 70%;
+}
+.pic-icons:hover {
+  transform: scale(1.2);
+}
+@media screen and (min-width: 578px) {
+  .memebers-resume {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .memebers-resume {
+    gap: 0.5rem;
+  }
+  .mb {
+    width: 16rem;
+  }
+  .memebers-resume h2 {    
+    margin: 3rem;    
+  }
+}
+
+

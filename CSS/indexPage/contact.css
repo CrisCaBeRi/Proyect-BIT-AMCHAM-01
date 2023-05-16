@@ -1,0 +1,71 @@
+@import url(../General/generalStyles.css);
+.contact {
+  margin: 3rem 0;
+  background-image: url(../../Assets/Anthony-members.jpg);
+  background-size:contain;
+  background-repeat: repeat;
+  width: 100%;
+  padding: 1rem;
+}
+.contact h2 {
+  padding: 1rem;
+  font-family: var(--mainFont);
+  font-size: 4rem;
+  color: var(--mainFontColor);
+  line-height: 3.6rem;
+  text-align: center;
+}
+.contact > form {
+  background-color: rgba(0, 0, 0, 0.384);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  border-radius: 2rem;
+  height: 8rem;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+#inputEmail {
+  border-radius: 1rem;
+  width: 70%;
+  height: 2rem;
+  padding: 0.3rem;
+  border: 1px solid var(--mainFontColor);
+}
+#email-register-btn {
+  width: 10rem;
+  height: 2rem;
+  border: none;
+  font-family: var(--alternativeFont);
+  font-weight: var(--btnWFont);
+  color: var(--mainFontColor);
+  transition: 0.2s all ease-in;
+  border-radius: 1rem;
+  background-color: var(--mainFontColor);
+  color: white;
+  cursor: pointer;
+}
+#email-register-btn:hover {
+  background-color: white;
+  transform: scale(1.07);
+  color: var(--mainFontColor);
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    margin: 6rem 0;
+    padding: 5vw;
+  }
+  .contact h2 {
+    padding: 1rem;
+    font-family: var(--mainFont);
+    font-size: 6rem;
+    line-height: 5.6rem;
+    text-align: center;
+  }
+  .contact > article > form {
+    width: 60%;
+  }
+}

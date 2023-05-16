@@ -1,0 +1,30 @@
+@import url(../General/generalStyles.css);
+.band-influences > ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .band-influences > ul > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .band-influences > ul > li > picture > img {
+    max-width: 15rem;
+    height: 15rem;
+    border-radius: 100%;
+    border: 10px solid var(--mainFontColor);
+  }
+  .band-influences h3 {
+    font-family: var(--alternativeFont);
+    color: var(--alternativeFontCOlor);
+    margin: 1rem;
+    text-align: center;
+  }
+  .band-influences p {
+    width: 70%;
+  }

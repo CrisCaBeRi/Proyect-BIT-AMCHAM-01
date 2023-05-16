@@ -1,44 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RHCP</title>
-    <link rel="stylesheet" href="../CSS/reset.css">
-    <link rel="stylesheet" href="../CSS/index.css">
-
+    <link rel="shortcut icon" href="../Assets/logo.png" type="image/x-icon">
+    <title>RHCP | BLOG</title>
+    <link rel="stylesheet" href="../CSS/indexPage/index.css">
 </head>
 
 <body>
     <header class="navigation">
-        <picture>
-            <img src="../Assets/logo.png" alt="Logo">
-        </picture>
+        <a href="./index.html">
+            <picture>
+                <img src="../Assets/logo.png" alt="Logo">
+            </picture>
+        </a>
         <nav>
+            <a href="./index.html">Inicio</a>
             <a href="./history.html">Historía</a>
             <a href="./members.html">Integrantes</a>
-            <a href="./discography.html">Dicografía</a>
-            <a href="">Contacto</a>
+            <a href="./discography.html">Discografía</a>
         </nav>
     </header>
-
     <main>
         <section class="presentation-history">
             <picture>
                 <img src="../Assets/mainImage.jpg" alt="Imagen grupo">
             </picture>
             <article class="presentation-description">
-                <h2>RED HOT CHILI PEPPERS</h2>
+                <h1>RED HOT CHILI PEPPERS</h1>
                 <p>Red Hot Chili Peppers es una banda de rock estadounidense formada en 1983 en Los Ángeles, California.
                     Sus integrantes son el vocalista Anthony Kiedis, el guitarrista John Frusciante, el bajista Flea y
                     el baterista Chad Smith.</p>
-                <a href="./history.html"><button type="button">Conoce su historia</button></a>
+                <button id="presentation-description-btn" type="button" onclick="navHistory()">Conoce su historia </button>
             </article>
-        </section>
-        <section class="video">
-            <iframe src="https://www.youtube.com/embed/UZUk4Ot93vg" title="YouTube video player" frameborder="5"
+            <iframe src="https://www.youtube.com/embed/UZUk4Ot93vg" title="YouTube video player"
                 allowfullscreen></iframe>
         </section>
         <section class="memebers-resume">
@@ -54,10 +52,7 @@
                 <p class="artist-resume">Anthony Kiedis es un músico estadounidense, vocalista y líder de Red Hot Chili
                     Peppers. Figura en el puesto 53 en el listado de Los 100 mejores vocalistas del Rock de todos los
                     tiempos.</p>
-                <form action="">
-                    <button type="button">Ver más</button>
-                </form>
-
+                <button type="button" onclick="navToMembers()">Ver más</button>
                 <ul class="icons">
                     <li>
                         <picture class="pic-icons">
@@ -81,12 +76,9 @@
                         <h3>Edad</h3>
                     </li>
                 </ul>
-
             </article>
-
             <article class="mb">
                 <span class="bck-card">RHCP</span>
-
                 <picture class="img-mb">
                     <img src="../Assets/Flea.jpg" alt="Flea image">
                 </picture>
@@ -96,10 +88,7 @@
                     australiano-estadounidense. Es uno de los fundadores de la banda de funk rock Red Hot Chili
                     Peppers.
                 </p>
-
-                <form action="">
-                    <button type="button">Ver más</button>
-                </form>
+                <button type="button" onclick="navToMembers()">Ver más</button>
                 <ul class="icons">
                     <li>
                         <picture class="pic-icons">
@@ -114,9 +103,7 @@
                         </picture>
                         <p>46 años</p>
                         <h3>Actividad</h3>
-
                     </li>
-
                     <li>
                         <picture class="pic-icons">
                             <img src="../Assets/edad.png" alt="">
@@ -125,12 +112,9 @@
                         <h3>Edad</h3>
                     </li>
                 </ul>
-
             </article>
-
             <article class="mb">
                 <span class="bck-card">RHCP</span>
-
                 <picture class="img-mb">
                     <img src="../Assets/chad.jpg" alt="Chad Image">
                 </picture>
@@ -139,11 +123,7 @@
                 <p class="artist-resume">Chad Gaylord Smith ​ es un músico estadounidense más conocido por ser el
                     baterista de la banda de rock Red Hot Chili Peppers, con quienes grabó 10 álbumes de estudio.
                 </p>
-
-                <form action="">
-                    <button type="button">Ver más</button>
-                </form>
-
+                <button type="button" onclick="navToMembers()">Ver más</button>
                 <ul class="icons">
                     <li>
                         <picture class="pic-icons">
@@ -178,9 +158,7 @@
                 <p class="artist-resume">John Anthony Frusciante es un guitarrista, compositor y productor
                     estadounidense. En la actualidad es el guitarrista de los Red Hot Chili Peppers, con quienes ha
                     grabado siete álbumes de estudio.</p>
-                <form action="">
-                    <button type="button">Ver más</button>
-                </form>
+                <button type="button" onclick="navToMembers()">Ver más</button>
                 <ul class="icons">
                     <li>
                         <picture class="pic-icons">
@@ -208,57 +186,69 @@
         </section>
         <section class="discography">
             <h2>Discografía</h2>
-
             <ul class="mixImg">
                 <li>
-                    <picture><img src="../Assets/Californication.jpg" alt=""></picture>
-                    <h3>Californication</h3>
-                    <p>1999</p>
+                    <a href="./discography.html">
+                        <picture><img src="../Assets/Californication.jpg" alt=""></picture>
+                        <h3>Californication</h3>
+                        <p>1999</p>
+                    </a>
                 </li>
                 <li>
-                    <picture><img src="../Assets/disc-BloodSugar.jpg" alt=""></picture>
-                    <h3>Blood Sugar Sex Magik</h3>
-                    <p>1991</p>
+                    <a href="./discography.html">
+                        <picture><img src="../Assets/disc-BloodSugar.jpg" alt=""></picture>
+                        <h3>Blood Sugar Sex Magik</h3>
+                        <p>1991</p>
+                    </a>
                 </li>
                 <li>
-                    <picture><img src="../Assets/disc-ByWay.jpg" alt=""></picture>
-                    <h3>By The Way</h3>
-                    <p>2002</p>
+                    <a href="./discography.html">
+                        <picture><img src="../Assets/disc-ByWay.jpg" alt=""></picture>
+                        <h3>By The Way</h3>
+                        <p>2002</p>
+                    </a>
                 </li>
                 <li>
-                    <picture><img src="../Assets/disc-Arcadium.jpg" alt=""></picture>
-                    <h3>Stadium Arcadium</h3>
-                    <p>2006</p>
+                    <a href="./discography.html">
+                        <picture><img src="../Assets/disc-Arcadium.jpg" alt=""></picture>
+                        <h3>Stadium Arcadium</h3>
+                        <p>2006</p>
+                    </a>
                 </li>
                 <li>
-                    <picture><img src="../Assets/disc-One.jpg" alt=""></picture>
-                    <h3>One Hot Minute</h3>
-                    <p>1995</p>
+                    <a href="./discography.html">
+                        <picture><img src="../Assets/disc-One.jpg" alt=""></picture>
+                        <h3>One Hot Minute</h3>
+                        <p>1995</p>
+                    </a>
                 </li>
                 <li>
-                    <picture><img src="../Assets/disc-Im.jpg" alt=""></picture>
-                    <h3>I'm With You</h3>
-                    <p>2020</p>
+                    <a href="./discography.html">
+                        <picture><img src="../Assets/disc-Im.jpg" alt=""></picture>
+                        <h3>I'm With You</h3>
+                        <p>2020</p>
+                    </a>
                 </li>
-                </ol>
-
+            </ul>
         </section>
-
         <section class="contact">
             <h2>Suscribete a las últimas novedades</h2>
-            <form action="post">
-                <input id="inputEmail" type="email" placeholder="Ingresa tu correo electrónico" required>
-                <button type="button" id="email-register-btn" onclick="submit">Enviar</button>
+            <form action="../HTML/index.html" id="email-form">
+                <input id="inputEmail" type="email" placeholder="Ingresa tu correo electrónico" required>                
+                <button type="submit" id="email-register-btn" onclick="submit">Enviar</button>
             </form>
         </section>
     </main>
-
     <footer id="footer-info">
         <ul>
-            <li><a href=""><img src="../Assets/facebook.png" alt="Facebook"></a></li>
-            <li><a href=""><img src="../Assets/instagram.png" alt=""></a></li>
-            <li><a href=""><img src="../Assets/twitter.png" alt=""></a></li>
-            <li><a href=""><img src="../Assets/youtube (4).png" alt=""></a></li>
+            <li><a href="https://www.facebook.com/ChiliPeppers" target="_blank"><img src="../Assets/facebook.png"
+                        alt="Facebook"></a></li>
+            <li><a href="https://www.instagram.com/chilipeppers/" target="_blank"><img src="../Assets/instagram.png"
+                        alt=""></a></li>
+            <li><a href="https://twitter.com/ChiliPeppers" target="_blank"><img src="../Assets/twitter.png" alt=""></a>
+            </li>
+            <li><a href="https://www.youtube.com/channel/UCEuOwB9vSL1oPKGNdONB4ig" target="_blank"><img
+                        src="../Assets/youtube.png" alt=""></a></li>
         </ul>
         <section class="addInfo">
             <picture>
@@ -270,8 +260,7 @@
             <a href="#">Política de privacidad</a>
         </section>
     </footer>
-
-
+    <script src="../JS/actionButtons.js"></script>
 </body>
 
 </html>

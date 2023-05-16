@@ -1,0 +1,93 @@
+@import url(../General/generalStyles.css);
+.presentation-history {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+.presentation-history > picture,
+.presentation-history > picture > img {
+  width: 100%;
+}
+.presentation-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.presentation-description > h1 {
+  font-family: var(--mainFont);
+  font-size: 4rem;
+  color: var(--mainFontColor);
+  line-height: 3.5rem;
+}
+.presentation-description > p {
+  color: var(--alternativeFontCOlor);
+  font-family: var(--alternativeFont);
+  width: 80%;
+  margin: auto;
+}
+.presentation-description > button {
+  width: 12rem;
+  height: 2rem;
+  border: 1px solid var(--mainFontColor);
+  font-family: var(--alternativeFont);
+  font-weight: var(--btnWFont);
+  color: var(--mainFontColor);
+  transition: 0.2s all ease-in;
+  cursor: pointer;
+}
+.presentation-description > button:hover {
+  transform: scale(1.05);
+  background-color: var(--mainFontColor);
+  font-family: var(--alternativeFont);
+  font-weight: var(--btnWFont);
+  color: #f2f2f2;
+}
+.presentation-history > iframe {
+  width: 100%;
+  height: 50vw;
+}
+@media screen and (min-width: 578px) {
+  .presentation-history > iframe  {
+    width: 100%;
+    height: 70vw;
+  }
+}
+@media screen and (min-width: 768px) {
+    .presentation-history {
+        flex-direction: column;
+        text-align: center;        
+      }
+      .presentation-description {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        place-items: center;
+      }
+      .presentation-description > h1 {
+        grid-area: 1 / 1 / 4 / 2;
+        width: 90%;
+        font-size: 8vw;
+        line-height: 9vw;
+        margin: 1rem;
+      }
+      .presentation-description > p {
+        width: 95%;
+        font-size: 1.5vw;
+        margin: 5vw 0 0 0;
+        grid-area: 1 / 2 / 3 / 3;
+      }
+      .presentation-description > button {
+        grid-area: 3 / 2 / 4 / 3;
+      }
+      .presentation-history > iframe  {
+        width: 100%;
+        height: 50vw;
+      }
+
+}
+
+

@@ -1,5 +1,39 @@
+@import url(../General/header.css);
+@import url(../General/footer.css);
 main {
-  margin: 12rem 0 3rem 0;
+  margin-top: 12rem;
+  margin-bottom: 4rem;
+}
+main h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin: 2rem;
+  line-height: 3.5rem;
+}
+main p {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+@media screen and (min-width: 400px) {
+  main {
+    margin-top: 10rem;
+  }
+}
+@media screen and (min-width: 578px) {
+  main {
+    margin-top: 8rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  main > h2 {
+    font-size: 8vw;
+  }
+  main p {
+    font-size: 1.5vw;
+    margin-bottom: 4vw;
+    width: 70%;
+  }
 }
 .mix-discography > p,
 .recent-albums-section > p,
@@ -26,11 +60,17 @@ main {
 .recent-albums > li {
   text-align: left;
   width: 35%;
+  text-decoration: none;
 }
-.recent-albums > li > picture > img {
+.recent-albums > li > a>picture > img {
   width: 100%;
 }
-.recent-albums > li > p {
+.recent-albums > li >a > h3 {
+  font-family: var(--mainFont);
+  font-size: 1.5rem;
+  color: grey;
+}
+.recent-albums > li >a> p {
   text-align: left;
   margin: 0;
 }
@@ -39,6 +79,9 @@ main {
 }
 .best-records > iframe {
   margin: 0 auto;
+  width: 20rem;
+  height: 25rem;
+  border: none;
 }
 @media screen and (min-width: 422px) {
   main {
@@ -55,16 +98,15 @@ main {
     margin-bottom: 2rem;
     width: 40%;
   }
-  .mix-discography > article {    
+  .mix-discography > article {
     width: 80%;
     margin: auto;
   }
-  .recent-albums > li {    
+  .recent-albums > li {
     width: 18%;
   }
-  .best-records>iframe{
+  .best-records > iframe {
     width: 40%;
     height: 70vh;
   }
-
 }

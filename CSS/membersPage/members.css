@@ -1,0 +1,69 @@
+@import url(../General/header.css);
+@import url(../General/footer.css);
+main {
+  margin-top: 12rem;
+  margin-bottom: 4rem;
+}
+@media screen and (min-width: 400px) {
+  main {
+    margin-top: 10rem;
+  }
+}
+@media screen and (min-width: 578px) {
+  main {
+    margin-top: 8rem;
+  }
+}
+.members-resume {
+  text-align: center;
+}
+.members-resume > article > h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+.members-resume > article > p {
+  width: 80%;
+  margin: auto;
+}
+.details-member > p {
+  margin: 1rem auto;
+  width: 80%;
+}
+.members-resume > article > picture > img {
+  width: 70%;
+  margin-bottom: 2rem;
+}
+.members-resume > article > details > summary {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  height: 2rem;
+  border: 1px solid var(--mainFontColor);
+  font-family: var(--alternativeFont);
+  font-weight: var(--btnWFont);
+  color: var(--mainFontColor);
+  transition: 0.2s all ease-in;
+  cursor: pointer;
+}
+.members-resume > article > details > summary:hover {
+  transform: scale(1.05);
+  background-color: var(--mainFontColor);
+  font-family: var(--alternativeFont);
+  font-weight: var(--btnWFont);
+  color: #f2f2f2;
+}
+@media screen and (min-width: 768px) {  
+  .members-resume > article > p,
+  .details-member > p {
+    width: 80%;
+    font-size: 1.5vw;
+  }
+  .members-resume > article > picture > img {
+    width: 35%;
+    height: 40vw;
+    margin-bottom: 2rem;
+  }
+}
