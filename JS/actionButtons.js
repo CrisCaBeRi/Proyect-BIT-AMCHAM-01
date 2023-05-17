@@ -3,8 +3,8 @@ EMAIL_FORM.addEventListener("submit", function (event) {
   alert("Gracias por registrar tu correo");
 });
 function navHistory() {
-  location.href = "../HTML/history.html";
+  location.href = "./history.html";
 }
 function navToMembers() {
-  location.href = "../HTML/members.html";
+  location.href = "./members.html";
 }
