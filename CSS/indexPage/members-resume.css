@@ -12,6 +12,7 @@
   color: var(--mainFontColor);
   line-height: 3.5rem;
   margin: 1rem;
+  width: 90%;
 }
 .mb {
   display: flex;
